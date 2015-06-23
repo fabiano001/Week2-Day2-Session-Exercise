@@ -1,0 +1,17 @@
+<% if(@authenticated==false)%>
+	<p>Incorrect login. Try again!!</p><br><br>
+<%end%>
+<h1>User Login</h1>
+
+<form action="/login" method="POST">
+	<label>Your Name:</label>
+	<input type="text" name="user_name" placeholder="Insert name here.">
+	<br>
+
+	<label>Your Password:</label>
+	<input type="password" name="user_pw" placeholder="Insert password here">
+	<br><br>
+
+	<button type="submit">Login</button>
+
+</form>
